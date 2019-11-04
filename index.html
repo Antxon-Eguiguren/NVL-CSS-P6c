@@ -1,0 +1,69 @@
+<!-- Ejercicio de práctica del módulo 2 CSS - Práctica P6c
+
+Pongamos un poco de magia creativa y realiza tú tu propia receta de cocina. Para ello utiliza selectores avanzados como los que has estudiado anteriormente y, por supuesto, no nos dejes con las ganas de ver cómo queda el plato y pon una foto de éste.
+Para ello, inspírate en alguna receta de una revista que tengas por casa e intenta imitar su estética, su contenido, etc. No te pongas límites y explícanos el proceso.
+
+Imagina también que existe un formulario debajo de la receta para que los usuarios dejen sus comentarios y/o preguntas. Recuerda, es ficticio, pero queremos comprobar cómo aplicas los conocimientos adquiridos a estructuras cada vez más complejas. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Receta de Garbanzos con Curry y Pollo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="titulos">
+		<h1 id="encabezado-uno">Garbanzos con Curry y Pollo</h1>
+		<h2 id="encabezado-dos">por Antxon Eguiguren</h2>
+	</div>
+	<div>
+		<h3>Ingredientes para 4 personas:</h3>
+		<div class="ingredientes">
+		<ul> <!-- El atributo clase hay que añadirlo al div, porque si lo añades a la lista desordenada, no funciona -->
+			<li data-carne>2 pechugas de pollo enteras</li>
+			<li data-verduras>1 cabeza de Ajo</li>
+			<li data-verduras>2 cebollas rojas</li>
+			<li data-verduras>1 pimiento verde</li>
+			<li data-verduras>1 pimiento rojo</li>
+			<li data-verduras>500 gramos de champiñones laminados</li>
+			<li data-legumbres>1 bote de garbanzos cocidos</li>
+			<li data-especias="leche de coco">1 lata de leche de coco</li>
+			<li data-especias>Una cucharada de jengibre, cúrcuma y curry en polvo</li>
+			<li data-especias>1 cayena</li>
+			<li data-aliño>Aceite de oliva, sal y pimienta negra</li>
+		</ul>
+		</div>
+		<h3>Proceso de preparación:</h3>
+		<div class="preparacion">
+		<ol>
+			<li>Pon aceite a calentar a fuego lento en una olla grande y pon la cayena dentro.</li>
+			<li>Pica el ajo en láminas y ponlo a freir a fuego lento para que se vaya dorando.</li>
+			<li>Trocea las pechugas en dados y metelas en la olla hasta que se doren por fuera. Echa sal y pimienta negra.</li>
+			<li>Saca el pollo y el ajo y retiralos en un plato. Además, encuentra la cayena y tirala a la basura.</li>
+			<li>Pon más aceite en la olla y sofrie las cebollas, el pimiento verde y el pimiento rojo. Echa sal y pimienta al gusto.</li>
+			<li>Una vez pochadas las verduras, incluye los champiñones.</li>
+			<li>Añade los garbanzos y el pollo con el ajo.</li>
+			<li>Abre la lata de leche de coco e inclúyela en la olla.</li>
+			<li>Pon una cucharada de jengibre en polvo, cúrcuma y curry.</li>
+			<li>Mezcla bien todo y voilá.</li>
+		</ol>
+		</div>
+	</div>
+	<div>
+		<img src="images/garbanzos-curry-pollo.jpg" alt="Garbanzos con Curry y Pollo">
+	</div>
+	<div>
+		<form class="formulario">
+		<fieldset>
+		<legend>Dejanos tu comentario sobre la receta</legend>
+			<label for="nombre">Nombre</label><br>
+			<input type="texto" name="nombre" size="42"><br><br>
+			<label for="comentario">Comentario</label><br>
+			<textarea name="comentarios" rows="10" cols="40"></textarea><br><br>
+			<input type="submit" name="enviar" id="boton" value="Envia tus comentarios">
+		</fieldset>
+		</form>
+	</div>
+</body>
+</html>

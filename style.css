@@ -1,0 +1,74 @@
+.titulos {					/* Selecciono lo que está dentro del div con clase "titulos" para darle color y tipo de letra. */
+	color: blue;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.titulos #encabezado-dos {	/* Selecciono solamente el encabezado dos para darle un color diferente al que le he dado con la selección mediante la clase. Nota: mantiene el tipo de letra. */
+	color: red;
+}
+
+div > h3 {					/* Para seleccionar todos los h3 hijo, dentro del mismo div. Usando este selector, no hace falta que declare en el HTML ningún atributo. */
+	color: #C35DF6;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-decoration: underline;
+}
+
+.ingredientes, .preparacion {		/* Para seleccionar la lista de ingredientes y preparacion. Nota: añadir la clase a nivel de div, a nivel de ul no deja. */
+	font-family: Bradley Hand, cursive;
+	font-size: 20px;
+}
+
+/* 
+Estos son los atributos que he declarado en el HTML:
+1. carne
+2. verduras 
+3. especias("leche de coco")
+4. legumbres
+5. aliño
+ */
+
+[data-carne] {
+	color: red;
+}
+
+[data-verduras] {
+	color: green;
+}
+
+[data-especias] {
+	color: brown;
+}
+
+[data-especias="leche de coco"] {		/* Dentro de las especias, tenemos definido el atributo para la leche de coco, ya que queremos darle un estilo diferente al resto de especias. */
+	color: #938B8B;
+}
+
+[data-legumbres] {
+	color: lime;
+}
+
+[data-aliño] {
+	color: #0BE1F3;
+}	
+
+.formulario {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 20px;
+	display: inline-block;
+	padding: 20px;
+}
+
+body {					/* He añadido padding al body para dejar un poco de margen en todo el contenido y he añadido un fondo de color en gradiente. */
+	padding: 20px;
+	background: linear-gradient(to left, yellow, blue, white 80%, orange);
+}
+
+img {
+	padding:20px;
+}
+
+#boton {
+	width: 250px;
+	display: inline-block;
+	text-transform: uppercase;
+}
